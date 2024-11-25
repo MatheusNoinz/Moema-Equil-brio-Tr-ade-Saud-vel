@@ -1,0 +1,668 @@
+/*  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #1D3557;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-bottom:3px solid #ffff;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #FFCC00;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-image: url(./midia/heropng.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2); 
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  color: white;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+ 
+  
+}
+
+.content-hero {
+  background-color: #1D3557;
+  height: 14rem;
+  border-radius: 20px;
+border-bottom: 3px solid white;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.section {
+  padding: 2rem 1rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+#alimentacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color:  #00B4D8;
+  font-size: 30px;
+}
+.section h3 {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.alimentação-img {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  
+}
+.exercicios-png {
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+}
+.sono-img {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.alimentacao-area,
+.exercicios-area,
+.sono-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ul,ol {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+form {
+  margin-top: 1rem;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 12px;
+  max-width: 450px;
+  width: 100%;
+  margin: auto;
+  
+
+}
+input,
+select,
+form button {
+  width: calc(100% - 22px);
+}
+form input, form button {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+  
+}
+
+form button {
+  background-color: #00B4D8;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #76b33a;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.alimentacao-area {
+  margin-bottom: 30px;
+}
+.Sexo-area,
+ .peso-area,
+ .altura-area,
+ .calculadora {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+ }
+ #sexo {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ }
+ h1,h2,h3,p,ul,ol {
+  margin-bottom: 10px;
+ }
+ li {
+  margin: 4px 0px 4px 0px;
+ }
+h2 {
+  text-align: center;
+}
+.bonus {
+  background-color: #A8DADC; 
+  padding: 10px;
+  border-left: 4px solid #457B9D; 
+  color: #1D3557; 
+}
+
+
+@media (min-width: 768px) {
+  .alimentação-img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    
+  }
+  .exercicios-png {
+    height: auto;
+    width: 100%;
+    max-width:300px;
+  }
+  .sono-img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+  }
+ 
+}
+@media (min-width: 1024px) {
+ 
+}
+*/
+/* Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+  height: 100%
+  
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+ 
+  background: linear-gradient(135deg, #d8f3f8, #0078a4);
+  height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+  
+  
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-bottom:3px solid  #FFD700;
+  width: 100%;
+  
+}
+
+header h1 {
+  font-family: 'Calistoga', cursive;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: #FFD700;
+  transform: scale(1.1);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  
+  
+}
+.section-divider {
+  width: 80%;
+  height: 4px;
+  background-color: #00264d;
+  margin: 30px auto;
+  border-radius: 2px;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+.devo p {
+  font-weight: bold;
+  color: black;
+ font-family: 'Montserrat';
+ font-size: 16px;
+ font-weight: normal;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.content-hero {
+  background-color: #003366;
+  display: flex;
+  height: 14rem;
+  border-radius: 20px;
+border-bottom: 3px solid  #FFD700;
+  width: 100%;
+  max-width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+.section {
+  padding: 2rem 1rem ;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+.section ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.alimentação-img {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+
+}
+
+.exercicios-png,
+.sono-img {
+  height: auto;
+  width: 100%;
+  max-width: 450px;
+}
+#gordura-img, #proteinas-img {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+}
+#carbo-img {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+}
+.img-area {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#ini-img {
+  height: auto;
+  width: 100%;
+  max-width: 700px;
+}
+.img-area img {
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+#sol-img {
+  height: auto;
+  width: 100%;
+  max-width: 450px;
+  
+}
+#sleep-img {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+.img-area img:hover{
+  transform: scale(1.05);
+}
+
+.proteinas {
+  grid-column: 2;
+}
+form {
+  margin-top: 2rem;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 12px;
+  max-width: 450px;
+  width: 100%;
+  margin: auto;
+  
+}
+
+input,
+select,
+form button {
+  width: calc(100% - 22px);
+ 
+}
+#qas {
+  text-align: center;
+  
+}
+.calculadora,
+.topicos {
+  grid-column: 1 / span 2;
+  gap: 20px;
+}
+
+form {
+  background-color: #EAF4F8;
+}
+form input,
+form button,
+#sexo {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#sexo {
+  width: calc(100% - 5px);
+}
+form button {
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  max-width: 160px;
+}
+.alh,
+.devo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  grid-column: 1 / span 2;
+}
+.devo h3 {
+  text-align: center;
+}
+.qase {
+  grid-column: 1 / span 2;
+}
+.CP,
+.SMR,
+.FI,
+.S2,
+.S4,
+.bonus {
+  grid-column: 2;
+
+}
+
+#balanca-img,
+#medi-img,
+#escu-img,
+#pro-img {
+  grid-column: 1;
+}
+form button:hover {
+  background-color:#66b2ff;;
+}
+
+/* Benefícios */
+.section .alimentacao-area,
+.section .exercicios-area,
+.section .sono-area {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-auto-flow: dense;
+  background-color: #cce7f0;
+  padding: 1rem;
+}
+
+.Sexo-area,
+ .peso-area,
+ .altura-area,
+ .calculadora,
+ .topicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .cimc {
+    font-size: 1.6rem;
+  }
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 767px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section .alimentacao-area,
+  .section .exercicios-area {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+
+  .section .alimentacao-area,
+  .section .exercicios-area{
+    grid-template-columns: 1fr;
+  }
+  .section .sono-area {
+    display: flex;
+    flex-direction: column;
+  }
+  .section h2 {
+    font-size: 1.6rem;
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 1.5rem;
+  }
+
+  .section h2 {
+    font-size: 1.7rem;
+  }
+
+  #imc-form input,
+  #imc-form select,
+  #imc-form button {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+  
+}
+
+/* Ajustes adicionais para telas maiores */
+@media (min-width: 1200px) {
+  .hero {
+    padding: 3rem 2rem;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 3rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  #imc-form {
+    padding: 2rem;
+  }
+
+  #imc-form input,
+  #imc-form select,
+  #imc-form button {
+    font-size: 1.1rem;
+    padding: 0.7rem;
+  }
+}
